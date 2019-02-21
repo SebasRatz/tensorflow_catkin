@@ -33,6 +33,11 @@ ExternalProject_Add(tensorflow_src
   SOURCE_SUBDIR tensorflow/contrib/cmake
   BINARY_DIR tensorflow_build
   LOG_BUILD 0
+  LOG_DOWNLOAD 0
+  LOG_UPDATE 0
+  LOG_CONFIGURE 0
+  LOG_TEST 0
+  LOG_INSTALL 0
   CMAKE_ARGS
     -DCMAKE_CXX_FLAGS=${CMAKE_CXX_FLAGS}
     -DCMAKE_BUILD_TYPE=Release
