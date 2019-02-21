@@ -21,7 +21,7 @@ else()
 endif()
 
 file(MAKE_DIRECTORY ${CATKIN_DEVEL_PREFIX}/include)
-
+SET(CMAKE_CXX_FLAGS "-Wno-ignored-attributes ${CMAKE_CXX_FLAGS}")
 ExternalProject_Add(tensorflow_src
   GIT_REPOSITORY https://github.com/tensorflow/tensorflow.git
   GIT_TAG c1d223de41838e9d387a48137c76ea39d3b38f3f
